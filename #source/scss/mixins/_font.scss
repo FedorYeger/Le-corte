@@ -1,0 +1,8 @@
+@mixin text ($fz,  $fw, $lh, $mw, $mb, $c){
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+  max-width: $mw;
+  margin-bottom: $mb;
+  color: $c;
+}

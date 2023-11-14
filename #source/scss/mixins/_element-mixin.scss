@@ -1,0 +1,9 @@
+@mixin element ($bg, $mw, $hg, $t, $r, $b, $l){
+  background: $bg;
+  min-width: $mw;
+  height: $hg;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+}
