@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -74,6 +78,27 @@ a {
 
 button {
   background-color: transparent;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 body {

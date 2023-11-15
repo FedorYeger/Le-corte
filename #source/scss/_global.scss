@@ -1,0 +1,17 @@
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+.container{
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "Montserrat", sans-serif;
+}
