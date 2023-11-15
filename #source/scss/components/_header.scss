@@ -7,14 +7,24 @@
 .header__info {
   @extend %flex; 
   div{
-    @include text(13px, 500, 1.5, none, 33px, #fff);
+    @include text(13px, 500, 1.5, none, 33px);
     margin-top: 30px;
   }
 }
 .header__nav-list{
   @extend %flex; 
   justify-content: space-around;
-  @include text(14px, 400, 1.5, none, 615px, #fff);
+  @include text(14px, 400, 1.5, none, 615px);
+}
+.header__list-item{
+  border: 1px solid #fff;
+  padding: 11px 110px 11px 110px;
+  &:first-child{
+    border-left: none;
+  }
+  &:last-child{
+    border-right: none;
+  }
 }
 .header__button-box {
   display: flex;
@@ -25,12 +35,18 @@
   }
 }
 .header__button {
-  @include text(16px, 500, normal, none, 0, #fff);
+  @include text(16px, 500, normal, none, 0);
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.8px;
   margin-right: 90px;
   padding: 15px 30px;
-  background: #99862A;
+  background: $back-btn;
   white-space: nowrap;
+  transition: .2s;
+  &:hover{
+    background: $hover-back-btn;
+    transition: .2s;
+    border-radius: 15px;
+  }
 }

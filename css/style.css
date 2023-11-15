@@ -109,6 +109,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  color: #fff;
 }
 
 .header {
@@ -122,7 +123,6 @@ body {
   line-height: 1.5;
   max-width: none;
   margin-bottom: 33px;
-  color: #fff;
   margin-top: 30px;
 }
 
@@ -133,7 +133,17 @@ body {
   line-height: 1.5;
   max-width: none;
   margin-bottom: 615px;
-  color: #fff;
+}
+
+.header__list-item {
+  border: 1px solid #fff;
+  padding: 11px 110px 11px 110px;
+}
+.header__list-item:first-child {
+  border-left: none;
+}
+.header__list-item:last-child {
+  border-right: none;
 }
 
 .header__button-box {
@@ -151,7 +161,6 @@ body {
   line-height: normal;
   max-width: none;
   margin-bottom: 0;
-  color: #fff;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.8px;
@@ -159,4 +168,10 @@ body {
   padding: 15px 30px;
   background: #99862A;
   white-space: nowrap;
+  transition: 0.2s;
+}
+.header__button:hover {
+  background: #6844bb;
+  transition: 0.2s;
+  border-radius: 15px;
 }/*# sourceMappingURL=style.css.map */
