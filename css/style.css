@@ -80,6 +80,10 @@ button {
   background-color: transparent;
 }
 
+address {
+  font-style: normal;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -87,7 +91,7 @@ button {
 }
 
 .container {
-  max-width: 1450px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 15px;
   height: 100%;
@@ -99,9 +103,4 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-}
-
-body {
-  font-size: 50px;
-  background-color: rgb(147, 147, 231);
 }/*# sourceMappingURL=style.css.map */
