@@ -97,7 +97,7 @@ address {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1130px;
   margin: 0 auto;
   padding: 0 15px;
   height: 100%;
@@ -110,6 +110,99 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   color: #fff;
+}
+
+.header__burger-wrapper {
+  position: absolute;
+  margin: 20px 50%;
+  transform: translateX(-32%);
+  width: 355px;
+  background-color: rgb(58, 58, 1);
+  text-align: center;
+}
+
+#header__check-menu {
+  display: none;
+}
+
+.header__lable {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  line-height: 35px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.header__burger-line {
+  position: absolute;
+  top: 9px;
+  right: 100px;
+  width: 35px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #99862A;
+  transition: 0.5s all;
+}
+
+.header__burger-line--second, .header__burger-line--third {
+  top: 16px;
+}
+
+.header__burger-line--fourth {
+  top: 23px;
+}
+
+.header__main-menu {
+  position: absolute;
+  display: block;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  transform: translateY(130%);
+  max-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+
+.header__burger-link {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3019607843);
+  background-color: #3a3a01;
+  transition: 0.15s all;
+}
+.header__burger-link:hover {
+  color: rgba(255, 255, 255, 0.4784313725);
+  transition: 0.15s all;
+}
+
+#header__check-menu:checked ~ .header__main-menu {
+  max-height: 500px;
+  font-size: 16px;
+}
+
+#header__check-menu:checked ~ .header__burger-line--first {
+  display: none;
+}
+
+#header__check-menu:checked ~ .header__burger-line--second {
+  transform: rotate(-45deg);
+}
+
+#header__check-menu:checked ~ .header__burger-line--third {
+  transform: rotate(45deg);
+}
+
+#header__check-menu:checked ~ .header__burger-line--fourth {
+  display: none;
 }
 
 .header {
@@ -174,4 +267,23 @@ body {
   background: #6844bb;
   transition: 0.2s;
   border-radius: 15px;
+}
+
+.header__burger-wrapper {
+  display: none;
+}
+
+@media (max-width: 1170px) {
+  .header__nav-list {
+    display: none;
+  }
+  .header__burger-wrapper {
+    display: block;
+  }
+  .header__info {
+    margin-bottom: 500px;
+  }
+  .header__button-box {
+    transform: translateX(15%);
+  }
 }/*# sourceMappingURL=style.css.map */

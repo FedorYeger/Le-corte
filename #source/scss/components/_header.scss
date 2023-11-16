@@ -26,6 +26,14 @@
     border-right: none;
   }
 }
+h1{
+  // font-size: 110px;
+  // font-family: 'PlayfairDisplay';
+  // margin-bottom: 400px;
+  // margin-left: 30%;
+  // transform: translateX(-3%);
+  // text-shadow: 0px 0px 30px #fff;
+}
 .header__button-box {
   display: flex;
   justify-content: center;
@@ -48,5 +56,23 @@
     background: $hover-back-btn;
     transition: .2s;
     border-radius: 15px;
+  }
+}
+.header__burger-wrapper{
+  display: none;
+}
+// ===================== 1170 =====================
+@media (max-width: 1170px){
+  .header__nav-list{
+    display: none;
+  }
+  .header__burger-wrapper{
+    display: block;
+  }
+  .header__info{
+    margin-bottom: 500px;
+  }
+  .header__button-box {
+    transform: translateX(15%);
   }
 }
