@@ -16,9 +16,20 @@ body{
   font-family: "Montserrat", sans-serif;
   color: #fff;
 }
-// ===================== 480 =====================
-// @media (max-width: 480px){
-//   .container{
-//     max-width: 80%;
-//   }
-// }
+.btn{
+  @include text(16px, 500, normal, none, 0);
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.8px;
+  margin-right: 90px;
+  padding: 15px 30px;
+  background: $back-btn;
+  white-space: nowrap;
+  transition: .2s;
+  &:hover{
+    background: $hover-back-btn;
+    transition: .2s;
+    border-radius: 15px;
+  }
+}
