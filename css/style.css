@@ -57,6 +57,7 @@ a, a:visited {
 
 a:hover {
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul li {
@@ -96,7 +97,7 @@ address {
   position: absolute;
 }
 
-.popup__info a:after, .popup__list-item a:after {
+.header__list-item a:after, .header__info a:after, .popup__info a:after, .popup__list-item a:after {
   display: block;
   content: "";
   height: 3px;
@@ -104,7 +105,9 @@ address {
   background-color: #fff;
   transition: width 0.4s ease-in-out;
 }
-.popup__info a:hover:after, .popup__list-item a:hover:after,
+.header__list-item a:hover:after, .header__info a:hover:after, .popup__info a:hover:after, .popup__list-item a:hover:after,
+.header__list-item a:focus:after,
+.header__info a:focus:after,
 .popup__info a:focus:after,
 .popup__list-item a:focus:after {
   width: 100%;

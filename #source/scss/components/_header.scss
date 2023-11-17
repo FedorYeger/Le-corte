@@ -5,7 +5,8 @@
 .header__inner {
 }
 .header__info {
-  @extend %flex; 
+  // @extend %hover-link;
+  @extend %flex, %hover-link; 
   div{
     @include text(13px, 500, 1.5, none, 33px);
     margin-top: 30px;
@@ -19,6 +20,7 @@
 .header__list-item{
   border: 1px solid #fff;
   padding: 11px 110px 11px 110px;
+  @extend %hover-link;
   &:first-child{
     border-left: none;
   }
