@@ -313,6 +313,7 @@ body {
   position: fixed;
   margin-top: 20px;
   margin-left: 50%;
+  transform: translateX(-50%);
 }
 .popup-link::after {
   background: #99862A;
