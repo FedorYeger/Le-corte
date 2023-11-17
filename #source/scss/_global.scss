@@ -33,3 +33,7 @@ body{
     border-radius: 15px;
   }
 }
+.heading{
+  @include text(32px, 700, 1.5, none, 0px);
+  font-family: 'Playfair Display';
+}

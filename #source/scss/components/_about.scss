@@ -1,0 +1,38 @@
+.about {
+  background-color: $black;
+}
+.about__inner{
+  // left: 50%;
+  // position: relative;
+  // transform: translateX(-50%);
+  // max-width: 1100px;
+  // padding: 160px 190px;
+  // padding-top: 160px;
+  // padding-bottom: 300px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // background: url('../images/decor/glass.svg') 0 0 / cover no-repeat;
+  // background-size: 160px;
+  // padding: 60px 190px 270px;
+}
+.about__content{
+  border: 1px solid #fff;
+  display: flex;
+  max-width: 735px;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 100px 0 300px;
+}
+.about__heading {
+  margin-bottom: 80px;
+}
+.about__paragraph {
+  position: relative;
+  &::after{
+    @extend %element;
+    @include element( url('../images/decor/glass.svg') 0 0 / cover no-repeat, 160px, 160px, 160px, 0px, 0px, 50%);
+    transform: translateX(-50%);
+  }
+}

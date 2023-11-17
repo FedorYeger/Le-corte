@@ -91,7 +91,7 @@ address {
   justify-content: space-between;
 }
 
-.popup-link::after {
+.about__paragraph::after, .popup-link::after {
   content: "";
   display: block;
   position: absolute;
@@ -155,6 +155,15 @@ body {
   background: #bb4444;
   transition: 0.2s;
   border-radius: 15px;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.5;
+  max-width: none;
+  margin-bottom: 0px;
+  font-family: "Playfair Display";
 }
 
 .header__burger-wrapper {
@@ -282,7 +291,7 @@ body {
 }
 
 .popup__body {
-  min-height: 100%;
+  max-height: 100%;
   justify-content: end;
 }
 
@@ -409,7 +418,7 @@ body {
 
 .header__heading {
   font-size: 110px;
-  font-family: "PlayfairDisplay";
+  font-family: "Playfair Display";
   margin-bottom: 320px;
   margin-left: 30%;
   transform: translateX(10%);
@@ -491,4 +500,40 @@ body {
   .popup-link {
     display: block;
   }
+}
+@media (max-width: 365px) {
+  .header__heading {
+    font-size: 75px;
+  }
+}
+.about {
+  background-color: #282828;
+}
+
+.about__content {
+  border: 1px solid #fff;
+  display: flex;
+  max-width: 735px;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 100px 0 300px;
+}
+
+.about__heading {
+  margin-bottom: 80px;
+}
+
+.about__paragraph {
+  position: relative;
+}
+.about__paragraph::after {
+  background: url("../images/decor/glass.svg") 0 0/cover no-repeat;
+  max-width: 160px;
+  height: 160px;
+  top: 160px;
+  right: 0px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
 }/*# sourceMappingURL=style.css.map */
