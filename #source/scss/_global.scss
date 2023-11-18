@@ -17,8 +17,20 @@ body{
   font-family: "Montserrat", sans-serif;
   color: #fff;
 }
-img{
-  display: inline-block;
+input{
+  background-color: hsl(0, 0%, 100%, .0);
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+  width: 255px;
+}
+input::placeholder{
+  color: #fff
+}
+input[type="text"] {
+  color: #fff;
+}
+input[type="tel"] {
+  color: #fff;
 }
 .btn{
   @include text(16px, 500, normal, none, 0);
