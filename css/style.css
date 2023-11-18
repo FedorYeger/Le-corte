@@ -91,7 +91,7 @@ address {
   justify-content: space-between;
 }
 
-.about__paragraph::after, .popup-link::after {
+.about__paragraph::after, .about__heading::after, .popup-link::after {
   content: "";
   display: block;
   position: absolute;
@@ -115,6 +115,7 @@ address {
 
 .wrapper {
   min-height: 100%;
+  background-color: #282828;
   overflow: hidden;
   width: 100%;
 }
@@ -333,7 +334,6 @@ body {
   height: 60px;
   top: -20px;
   right: 0;
-  bottom: 0;
   left: 0;
   z-index: -1;
   border-radius: 10%;
@@ -508,20 +508,29 @@ body {
 }
 .about {
   background-color: #282828;
+  margin: 100px 0;
 }
 
 .about__content {
   border: 1px solid #fff;
   display: flex;
-  max-width: 735px;
   text-align: center;
   flex-direction: column;
-  margin: 0 auto;
-  padding: 100px 0 300px;
+  padding: 60px 190px 270px;
 }
 
 .about__heading {
   margin-bottom: 80px;
+  position: relative;
+}
+.about__heading::after {
+  background: #fff;
+  max-width: 160px;
+  height: 1px;
+  bottom: -40px;
+  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .about__paragraph {
@@ -531,9 +540,69 @@ body {
   background: url("../images/decor/glass.svg") 0 0/cover no-repeat;
   max-width: 160px;
   height: 160px;
-  top: 160px;
-  right: 0px;
-  bottom: 0px;
+  top: 180px;
   left: 50%;
+  right: 0;
   transform: translateX(-50%);
+}
+
+@media (max-width: 960px) {
+  .about__content {
+    padding: 60px 100px 270px;
+  }
+}
+@media (max-width: 845px) {
+  .about__paragraph::after {
+    top: 200px;
+  }
+}
+@media (max-width: 745px) {
+  .about__paragraph::after {
+    top: 230px;
+  }
+}
+@media (max-width: 690px) {
+  .about__content {
+    padding: 60px 50px 270px;
+  }
+}
+@media (max-width: 590px) {
+  .about__paragraph::after {
+    top: 260px;
+  }
+}
+@media (max-width: 540px) {
+  .about {
+    background-color: #282828;
+    margin: 50px 0;
+  }
+  .about__content {
+    padding: 30px 40px;
+  }
+  .about__heading {
+    font-size: 28px;
+  }
+  .about__paragraph::after {
+    top: -170px;
+    left: 10px;
+  }
+}
+@media (max-width: 520px) {
+  .about__heading {
+    font-size: 24px;
+  }
+  .about__paragraph::after {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .about__content {
+    padding: 10px 20px;
+  }
+  .about__heading {
+    margin-bottom: 40px;
+  }
+  .about__heading::after {
+    bottom: -20px;
+  }
 }/*# sourceMappingURL=style.css.map */

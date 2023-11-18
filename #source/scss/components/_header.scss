@@ -2,8 +2,6 @@
   background: url('../images/bgc.jpg') 30% 0 / cover no-repeat;
   height: 100vh;
 }
-.header__inner {
-}
 .header__info {
   @extend %flex, %hover-link; 
   div{
