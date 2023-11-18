@@ -146,6 +146,9 @@ section.harvest {
   .harvest__images-box{
     display: none;
   }
+  .harvest__content{
+    margin: 0;
+  }
 }
 // ===================== 540 =====================
 @media (max-width: 540px){
@@ -175,10 +178,11 @@ section.harvest {
   }
   .harvest__row-numbers {
     border-right: none;
-    padding: 10px 10px ;
+    padding: 10px ;
   }
   .harvest__row-info{
     padding: 30px;
+    text-align: center;
   }
 }
 // ===================== 410 =====================
@@ -195,17 +199,5 @@ section.harvest {
 }
 // ===================== 370 =====================
 @media (max-width: 370px){
-  // .harvest__content{
-  //   margin: 0;
-  // }
-  // .harvest__row{
-  //   max-width: 220px;
-  //   border: none;
-  //   &:first-child{
-  //     border-top: none;
-  //   }
-  // }
-  // .harvest__row-title{
-  //   width: 200px;
-  // }
+
 }
