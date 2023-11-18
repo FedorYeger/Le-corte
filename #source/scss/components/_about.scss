@@ -77,9 +77,6 @@
   .about__content{
     padding: 30px 40px;
   }
-  .about__heading{
-    font-size: 28px;
-  }
   .about__paragraph {
     &::after{
       top: -170px;
@@ -89,9 +86,6 @@
 }
 // ===================== 520 =====================
 @media (max-width: 520px){
-  .about__heading{
-    font-size: 24px;
-  }
   .about__paragraph {
     &::after{
       display: none;
