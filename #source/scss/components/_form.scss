@@ -13,7 +13,6 @@
   &::after{
     @extend %element;
     @include element(url('../../../images/decor/barrel.svg') 0 0 / cover no-repeat, 260px, 260px);
-    // transform: translateX(-100%);
     left: 71%;
     top: 0;
     right: 0;
@@ -27,9 +26,6 @@
   align-items: center;
   padding: 0px 285px 95px;
   border: 3px solid $border;
-  // border-top: none;
-}
-.form__content{
 }
 .form__heading {
   left: 50%;
@@ -55,8 +51,6 @@
 .form__row{
   @extend %flex;
   margin-bottom: 50px;
-}
-.form__input {
 }
 .form__input--name{
   margin-right: 30px;

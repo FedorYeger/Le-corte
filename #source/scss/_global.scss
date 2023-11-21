@@ -24,7 +24,8 @@ input{
   width: 255px;
 }
 input::placeholder{
-  color: #fff
+  color: #fff;
+  font-size: 13px;
 }
 input[type="text"] {
   color: #fff;

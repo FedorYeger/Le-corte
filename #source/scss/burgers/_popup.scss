@@ -29,7 +29,6 @@
   max-height: 100%;
   @extend %flex;
   justify-content: end;
-  // padding: 30px 10px;
 }
 .popup__content {
   background-color: $hover-burger;
@@ -79,7 +78,7 @@
 @media (max-width: 600px){  
   .popup__content {
     max-width: 100%;
-    // height: 100vh;
+    height: 100vh;
   }
   .popup__body {
     padding: 0;
@@ -89,7 +88,7 @@
 .popup__title {
   font-size: 30px;
   text-transform: uppercase;
-  padding-bottom: 100px;
+  padding: 50px 0 100px;
 }
 .popup__nav-list{
   @include text(16px, 400, 1.5, none, 0);
@@ -97,8 +96,6 @@
 .popup__list-item{
   padding-bottom: 30px;
   @extend %hover-link;
-}
-.popup__button-box {
 }
 .popup__button {
   margin-right: 30px;

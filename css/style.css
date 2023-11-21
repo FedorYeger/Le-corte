@@ -85,7 +85,7 @@ address {
   font-style: normal;
 }
 
-.form__row, .harvest__row, .harvest__inner, .header__nav-list, .header__info, .popup__body {
+.footer__socials, .footer__contacts-list, .footer__nav-list, .form__row, .harvest__row, .harvest__inner, .header__nav-list, .header__info, .popup__body {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,7 +97,7 @@ address {
   position: absolute;
 }
 
-.header__list-item a:after, .header__info a:after, .popup__info a:after, .popup__list-item a:after {
+.footer__contacts-item a:after, .footer__list-item a:after, .header__list-item a:after, .header__info a:after, .popup__info a:after, .popup__list-item a:after {
   display: block;
   content: "";
   height: 3px;
@@ -105,7 +105,9 @@ address {
   background-color: #fff;
   transition: width 0.4s ease-in-out;
 }
-.header__list-item a:hover:after, .header__info a:hover:after, .popup__info a:hover:after, .popup__list-item a:hover:after,
+.footer__contacts-item a:hover:after, .footer__list-item a:hover:after, .header__list-item a:hover:after, .header__info a:hover:after, .popup__info a:hover:after, .popup__list-item a:hover:after,
+.footer__contacts-item a:focus:after,
+.footer__list-item a:focus:after,
 .header__list-item a:focus:after,
 .header__info a:focus:after,
 .popup__info a:focus:after,
@@ -145,10 +147,12 @@ input {
 
 input::-moz-placeholder {
   color: #fff;
+  font-size: 13px;
 }
 
 input::placeholder {
   color: #fff;
+  font-size: 13px;
 }
 
 input[type=text] {
@@ -380,6 +384,7 @@ input[type=tel] {
 @media (max-width: 600px) {
   .popup__content {
     max-width: 100%;
+    height: 100vh;
   }
   .popup__body {
     padding: 0;
@@ -388,7 +393,7 @@ input[type=tel] {
 .popup__title {
   font-size: 30px;
   text-transform: uppercase;
-  padding-bottom: 100px;
+  padding: 50px 0 100px;
 }
 
 .popup__nav-list {
@@ -1056,5 +1061,124 @@ section.harvest {
 @media (max-width: 350px) {
   .form__lable {
     padding: 15px;
+  }
+}
+.footer {
+  background: #99862A;
+}
+
+.footer__inner {
+  padding: 70px 0;
+}
+
+.footer__nav-list {
+  justify-content: space-around;
+  padding: 20px 0;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 1.5;
+  border-top: 1px solid #fff;
+}
+
+.footer__list-item:first-child {
+  padding-left: 0;
+}
+.footer__list-item:last-child {
+  padding-right: 0;
+}
+
+.footer__contacts {
+  border: 1px solid #fff;
+  border-left: none;
+  border-right: none;
+}
+
+.footer__contacts-list {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  max-width: none;
+  margin-bottom: none;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.footer__contacts-item {
+  border-right: 1px solid #fff;
+  padding: 20px 55px;
+}
+.footer__contacts-item:nth-child(2) {
+  margin-left: -40px;
+}
+.footer__contacts-item:last-child {
+  border-left: 1px solid #fff;
+  border-right: none;
+  padding-right: 40px;
+}
+.footer__contacts-item:first-child {
+  padding-left: 40px;
+}
+
+.footer__socials {
+  padding: 0px 57px;
+}
+
+.footer__socials-item {
+  margin-right: 35px;
+}
+.footer__socials-item:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 1130px) {
+  .footer__contacts-item:nth-child(2) {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1025px) {
+  .footer__contacts-item {
+    padding: 20px 30px;
+  }
+}
+@media (max-width: 925px) {
+  .footer__nav-list {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    border-top: none;
+  }
+  .footer__nav {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .footer__contacts {
+    padding-top: 35px;
+    border: none;
+  }
+  .footer__contacts-list {
+    flex-direction: column;
+  }
+  .footer__contacts-item {
+    margin-bottom: 20px;
+    border-right: none;
+    padding: 0;
+  }
+  .footer__contacts-item:nth-child(2) {
+    margin-left: 0;
+  }
+  .footer__contacts-item:last-child {
+    border-left: none;
+    border-right: none;
+    padding-right: 0;
+  }
+  .footer__contacts-item:first-child {
+    padding-left: 0;
+  }
+}
+@media (max-width: 595px) {
+  .footer__inner {
+    padding: 35px 0px;
   }
 }/*# sourceMappingURL=style.css.map */
