@@ -100,7 +100,7 @@ address {
 .footer__contacts-item a:after, .footer__list-item a:after, .header__list-item a:after, .header__info a:after, .popup__info a:after, .popup__list-item a:after {
   display: block;
   content: "";
-  height: 3px;
+  height: 2px;
   width: 0%;
   background-color: #fff;
   transition: width 0.4s ease-in-out;
@@ -853,7 +853,7 @@ section.harvest {
     padding: 10px;
   }
   .harvest__row-info {
-    padding: 30px;
+    padding: 0 30px 30px 30px;
     text-align: center;
   }
 }
