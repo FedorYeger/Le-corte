@@ -76,6 +76,9 @@
 }
 // ===================== 925 =====================
 @media (max-width: 925px){
+  .footer__inner{
+    padding: 55px 0;
+  }
   .footer__nav-list{
     display: inline-flex;
     flex-direction: column;
@@ -110,6 +113,9 @@
     &:first-child{
       padding-left: 0;
     }
+  }
+  .footer__socials {
+    padding: 0px 57px 15px ;
   }
 }
 // ===================== 595 =====================
