@@ -3,7 +3,7 @@
   position: relative;
   &::before{
     @extend %element;
-    @include element(url('../../../images/decor/grape.svg') 0 0 / cover no-repeat, 260px, 260px);
+    @include element(url('../images/decor/grape.svg') 0 0 / cover no-repeat, 260px, 260px);
     left: 10%;
     top: 0;
     right: 0;
@@ -12,7 +12,7 @@
   }
   &::after{
     @extend %element;
-    @include element(url('../../../images/decor/barrel.svg') 0 0 / cover no-repeat, 260px, 260px);
+    @include element(url('../images/decor/barrel.svg') 0 0 / cover no-repeat, 260px, 260px);
     left: 71%;
     top: 0;
     right: 0;
