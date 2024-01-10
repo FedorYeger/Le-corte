@@ -6,4 +6,4 @@
 - ADAPTIVE
 
 ## Link:
-Can you view [my project](https://fedorevgenievich.github.io/Le-corte/)
+Can you view [my project](https://FedorYeger.github.io/Le-corte/)
