@@ -2,8 +2,8 @@
 
 ## Stack:
 - HTML 5
-- SCSS
+- CSS 3 / SCSS
 - ADAPTIVE
 
 ## Link:
-Can you view [my project](https://FedorYeger.github.io/Le-corte/)
+Can you view [my project](https://FedorYeager.github.io/Le-corte/)
